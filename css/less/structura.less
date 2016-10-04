@@ -619,21 +619,27 @@
 		overflow: hidden;
 		margin-bottom: 30px;
 		.menu {
-			margin-right: 150px;
+			margin-right: 142px;
+			margin-left: -8px;
 			li {
 				display: block;
 				float: left;
-				margin-right: 17px;
 				&:last-child {margin-right: 0;}
 			}
 			a {
 				display: block;
 				font-size: 10px;
+				padding: 0 8px;
 				text-transform: uppercase;
 				letter-spacing: 1.7px;
 				text-decoration: none;
 				font-weight: bold;
 				color: #fff;
+				transition: color ease 0.3s;
+				&:hover, &.active {
+					color: @clr-title;
+					background: #f8f9fb;
+				}
 			}
 		}
 		.main-soc-block {
@@ -765,11 +771,13 @@
 	.nav {
 		margin-bottom: 40px;
 		.menu {
+			margin-left: -25px;
+			margin-right: 130px;
 			li {
-				margin-right: 50px;
 				&:last-child {margin-right: 0;}
 			}
 			a {
+				padding: 0 25px;
 				font-size: 11px;
 			}
 		}
